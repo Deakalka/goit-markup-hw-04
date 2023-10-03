@@ -485,9 +485,7 @@ img {
 .footer-social-links .link:hover .icon {
     fill: #f4f4fd
 }
-.footer-first-sec{
-    margin-right: 120px;
-}
+
 .footer-box{
     display: flex;
     align-items: baseline;
@@ -500,4 +498,7 @@ img {
 
 .footer-box svg {
     fill: #f4f4fd
+}
+.footer-first-sec{
+    margin-right: 120px;
 }
