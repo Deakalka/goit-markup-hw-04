@@ -521,15 +521,14 @@ img {
 .footer-box{
     display: flex;
     gap: 120px;
+    align-items: baseline;
+    margin-right: 120px;
 }
 .footer-second-sec{
     justify-content: center;
     align-items: center;
 }
-.footer-box div {
-    align-items: baseline;
-    margin-right: 120px;
-}
+
 .footer-box svg {
     fill: var(--WHITE, #FFF);
 }
