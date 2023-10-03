@@ -81,16 +81,42 @@ img {
 .header-link:hover, .header-link:focus, .header-link-addres:hover, .header-link-addres:focus{
     color: #404BBF;
 }
+.header-link:hover, .header-link:focus{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 28px;
+    text-decoration-skip-ink: auto;
 
+    /* border-bottom:2px solid #404BBF;
+    border-radius: 2px; */
+}
+
+/* .link-mark::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 48px;
+    border-radius: 2px;
+    background: #404bbf;
+    transform: translateX(50%);
+}
+.header-link:first-child {
+    color: #404bbf;
+} */
 
 /* ============ 1 section ============ */
 .first-section{
-    background-color: #2E2F42;
     padding: 188px 0;
-    
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
+    , url(/images/hw-4.jpg) ;
+    background-position: center;
+    background-size: cover;
 }
-.first-container{
 
+.first-container{
 }
 .title-first{
     color: #FFF;
@@ -168,6 +194,24 @@ img {
     width: calc((100% - 72px) / 4); 
 }
 
+.box-for-icon{
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+}
+
+
+
 /* =========== 3 section ============= */
 .section-third{
     background-color: #F4F4FD;
@@ -199,6 +243,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em; 
     text-align: center;
+    margin-bottom: 8px;
 }
 .third-list{
     background-color: #F4F4FD;
@@ -209,10 +254,45 @@ img {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px; 
     width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+ 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .job_title{
-    padding: 32px 0;   
+    padding: 32px 0;  
 }
+
+
+.social-links {
+    display: flex;
+    gap: 24px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    justify-content: center;
+}
+
+.social-links .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+}
+
+.social-links .link:hover {
+  background-color: #404BBF;
+}
+
+.social-links .icon {
+  fill: #fff;
+}
+
+/* .social-links .link:hover .icon {
+  fill: #fff;
+} */
 
 
 
@@ -233,6 +313,11 @@ img {
 }
 .portfolio-item {
     width: calc((100% - 48px) / 3); 
+    border: 1px solid var(--CLOUD, #F4F4FD);
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .portfolio-item-title {
     color:#2E2F42;
@@ -261,6 +346,40 @@ img {
     padding: 32px 16px;
   
 }
+
+
+.overlay-text{
+    color: #f4f4fd;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+}
+
+.overlay{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #4D5AE5;
+    padding: 40px 32px;
+  
+    transform: translatey(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item:hover .overlay{
+    transform: translatey(0);
+}
+
+.all-hover{
+    position: relative;
+    overflow: hidden;
+}
+
 
 
 
@@ -293,3 +412,53 @@ img {
     letter-spacing: 0.02em;
     max-width: 264px;
 }
+
+.footer-title{
+    color: var(--WHITE, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+
+.footer-social-links{
+    display: flex;
+    gap: 24px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    justify-content: center;
+}
+
+.footer-social-links .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+}
+
+.footer-social-links .link:hover {
+    background-color: #31D0AA;
+}
+
+.footer-social-links .icon {
+  fill: #fff;
+}
+
+.footer-social-links .link:hover .icon {
+    fill: #FFF
+}
+
+.footer-box{
+    display: flex;
+    gap: 120px;
+}
+.footer-second-sec{
+    justify-content: center;
+    align-items: center;
+}
+
