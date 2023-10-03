@@ -479,18 +479,19 @@ img {
 }
 
 .footer-social-links .icon {
-  fill: #fff;
+  fill: #f4f4fd;
 }
 
 .footer-social-links .link:hover .icon {
-    fill: #FFF
+    fill: #f4f4fd
 }
-
+.footer-first-sec{
+    margin-right: 120px;
+}
 .footer-box{
     display: flex;
-    gap: 120px;
     align-items: baseline;
-    margin-right: 120px;
+
 }
 .footer-second-sec{
     justify-content: center;
@@ -498,5 +499,5 @@ img {
 }
 
 .footer-box svg {
-    fill: var(--WHITE, #FFF);
+    fill: #f4f4fd
 }
