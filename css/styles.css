@@ -311,7 +311,7 @@ img {
 .link-third:focus {
     background-color: #404bbf;
 }
-.social-links .icon {
+.icon {
   fill: #f4f4fd ;
 }
 
@@ -480,11 +480,7 @@ img {
     background-color: #31D0AA;  
 }
 
-.footer-social-links .icon {
-  fill: none;
-}
-
-.footer-social-links .link:hover .icon {
+.icon-footer{
     fill: #f4f4fd
 }
 
@@ -498,9 +494,6 @@ img {
     align-items: center;
 }
 
-.icon{
-    fill: #f4f4fd
-}
 .footer-first-sec{
     margin-right: 120px;
 }
